@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="/*-webkit-filter:grayscale();filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); */">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,maximum-scale=1">
+    <meta content="email=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta content="true" name="HandheldFriendly"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="不能盲目相信经验或者固有认知,具有了不起的技艺或经验。并为其他人解决问题，无论问题有多麻烦。称为技术大牛" name="description">
+    <meta content="" name="keywords">
+    <title>DONGWIKI-任重而道远</title>
+    <link href="skin/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="skin/css/header.css" type="text/css" rel="stylesheet">
+    <link href="skin/css/footer.css" type="text/css" rel="stylesheet">
+    <link href="skin/css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body data-header="1" data-footer="1">
+<div class="wrap-body">
+    <section id="caseList" class="case-lsit"></section>
+    <div class="content">
+        <div class="page-content">
+            <div class="info-list" id="info">
+                <div class="info-num" id="infoNum"></div>
+                <div class="min-weather" id="minWeather"></div>
+                <div class="weather-date" id="weatherDate"></div>
+            </div>
+            <div class="data-list" id="dataHTML"></div>
+        </div>
+    </div>
+</div>
+<!--CMD-->
+<!--#include virtual="inc/seajs.html" -->
+<script>
+    seajs.use(['underscore','imgload','kernel','index','city','ycode'],function(_A,c,img,a,c,y){
+        a.init();
+    });
+</script>
+<!--CMD-->
+</body>
+</html>
